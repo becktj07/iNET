@@ -1,0 +1,41 @@
+.header {
+    padding-top: 20px;
+    position: relative;
+    background-image: url(/images/dog-cat-hero.jpg);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 750px;
+
+    .header-logo {
+        position: relative;
+        width:200px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+    .hero-heading {
+        font-family: $heading-font;
+        font-size: $font-size-xlarge;
+        margin: 16px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .hero-heading--description {
+        text-align: center;
+        color: #fff;
+        margin: 0 .75rem;
+        font-family: $body-font;
+    }
+}
+
+.nav-bar {
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    background-color: #fff;
+    top: 70px;
+}

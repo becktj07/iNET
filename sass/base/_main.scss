@@ -1,0 +1,207 @@
+﻿
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Remove text-shadow in selection highlight */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* A better looking default horizontal rule */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* Remove the gap between audio, canvas, iframes,images, videos and the bottom of their containers */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/* Remove default fieldset styles */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Allow only vertical resizing of textareas */
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    color: $body-font-color;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+    font-family: 'Open Sans', Arial, sans-serif;
+
+    @media #{$mq-medium} {
+        line-height: 1.5em;
+    }
+
+    @media #{$mq-large} {
+        line-height: 1.7em;
+    }
+}
+
+h1 {
+    display: block;
+    font-size:$font-size-large;
+    margin:0;
+}
+
+h2 {
+    display: block;
+    font-size:$font-size-medium;
+    margin:0;
+    color:$primary;
+}
+
+h3 {
+    display: block;
+    font-size: $font-size-medium;
+    margin: 0 0 1em 0;
+    color: $primary;
+}
+
+ul {
+    font-size: 15px;
+    margin:0 0 1em 0;
+}
+
+li {
+    line-height:1.6em;
+
+    @media #{$mq-medium} {
+        line-height: 1.7em;
+    }
+
+    @media #{$mq-large} {
+        line-height: 1.9em;
+    }
+}
+
+a { 
+    color:$secondary;
+    text-decoration:none;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight:normal;
+    cursor: pointer;
+
+    &:hover {
+        color:$darkSecondary;
+        text-decoration:underline;
+    }
+}
+
+a, a:hover, a:active, a:focus {
+    outline: 0;
+}
+
+.button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    @include box-sizing;
+    border-radius: 30px;
+    width: 60%;
+    font-size:$font-size-button;
+    font-weight: lighter;
+    background-color: $secondary;
+    color: #fff;
+    line-height: 2.5rem;
+    padding: 8px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    transition: background-color .25s linear;
+
+    &:hover {
+        background-color: $darkSecondary;
+        color: #ffffff;
+        text-decoration: none;
+        transition: background-color .25s linear;
+    }
+}
+
+.image-contain {
+    max-width: 100%;
+    clear: none;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+//Flexbox Classes
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    -webkit-order: 0;
+    order: 0;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+    -webkit-align-self: auto;
+    align-self: auto;
+}
